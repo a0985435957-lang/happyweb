@@ -41,6 +41,16 @@
       .nav-link:hover, .nav-link.active       {
         color: #2c5aa0;
       }
+
+      .nav-link.active::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #EAC100;
+      }
       
       .logo i {
           margin-right: 0.5rem;
