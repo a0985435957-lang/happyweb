@@ -50,3 +50,14 @@
     margin-right: 0.5rem;
     font-size: 1.8rem;
 }
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
