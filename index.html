@@ -4,17 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>承億的旅遊日記</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+      #header {
+          background: #fff;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 1000;
+      }
+      .logo {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #2c5aa0;
+      }
+      .nav-menu {
+          display: flex;
+          list-style: none;
+          gap: 2rem;
+      }
+      .nav-link:hover, .nav-link.active {
+        color: #2c5aa0;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div>承億的旅遊日記</div>
+    <header id="header">
+      <div class="logo">
+          <i class="fas fa-map-marked-alt"></i>
+          <span>Yi之記憶蹤跡</span>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">首頁</a></li>
-          <li><a href="introduce.html">介紹</a></li>
-          <li><a href="track.html">足跡</a></li>
-          <li><a href="future.html">未來</a></li>
-          <li><a href="about.html">關於</a></li>
+        <ul class="nav.menu">
+            <li class="nav-item"><a href="index.html" class="nav-link active">首頁</a></li>
+            <li class="nav-item"><a href="introduce.html" class="nav-link">>介紹</a></li>
+            <li class="nav-item"><a href="track.html" class="nav-link">足跡</a></li>
+            <li class="nav-item"><a href="future.html" class="nav-link">未來</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">關於</a></li>
         </ul>
       </nav>
     </header>
