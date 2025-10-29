@@ -7,6 +7,8 @@
           z-index: 1000;
           display: flex;
           justify-content: space-between;
+          padding: 0 50px;
+          box-sizeing: border-box;
 }
 
 .navbar {
