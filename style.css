@@ -120,3 +120,16 @@
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+.tag-link {
+    background: #f0f0f0;
+    color: #666;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+.tag-link:hover {
+    background: #2c5aa0;
+    color: white;
+}
