@@ -130,6 +130,6 @@
     transition: all 0.3s ease;
 }
 .tag-link:hover {
-    background: rgb(174, 240, 158);
+    background: rgb(193, 158, 240);
     color: blue;
 }
