@@ -182,9 +182,14 @@ img[src*="images/"] {
     min-height: 200px;
     position: relative;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .tag {
-    background: #dcf5bf;
-    color: #1f9125;
+     
     padding: 0.2rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
