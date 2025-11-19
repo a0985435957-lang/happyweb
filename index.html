@@ -106,7 +106,7 @@
             const container = document.querySelector('.posts-grid');
             //container.innerHTML = posts.map(createPostCard).json('');
 
-            Posts.forEach(post => {
+            posts.forEach(post => {
                 const article  = createPostCard(post);
                 container.appendChild(article);
             });
