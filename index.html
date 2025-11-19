@@ -31,7 +31,7 @@
       <p>Yi 起增加記憶的種子吧</p>
       <button class="hero-btn">進行開拓</button>
     </section>
-    <main>
+    <main id="main-content">
       <div class="container">
         <div class="content-wrapper">
           <div class="poste">
@@ -139,8 +139,11 @@
                 behavior: 'smooth' 
             });
         });
+
+        function scrollToContent() {
+        document.getElementById('main-content').scrollIntoView({
+            behavior: 'smooth'
+        });
     </script>
 </body>
 </html>
-
-
