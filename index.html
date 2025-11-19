@@ -162,6 +162,15 @@
         }
         greeting();
 
+        fetch('article.json')
+        .then(res => res.json())
+        .then(posts => renderPosts(posts));
+
+        function renderPosts(posts){
+            const container = document.querySelector('.posts-grid');
+            container.innerHTML = posts.map(createPostCard).json('');
+        }
+        
     </script>
 </body>
 </html>
