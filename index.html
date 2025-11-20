@@ -105,12 +105,12 @@
 
         function renderPosts(posts){
             const container = document.querySelector('.posts-grid');
-            //container.innerHTML = posts.map(createPostCard).join('');
+            container.innerHTML = posts.map(createPostCard).join('');
 
-            posts.forEach(post => {
+            /*posts.forEach(post => {
                 const article  = createPostCard(post);
                 container.appendChild(article);
-            });
+            });*/
         }
 
         function createPostCard(post) {
