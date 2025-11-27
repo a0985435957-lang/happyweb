@@ -131,8 +131,8 @@
             `;
         }
 
-        function assignEvent(){
-            $('.tag-link').click(function(e) {
+        //function assignEvent(){
+            $(document).on('click','.tag-link', function(e) {
                 e.preventDefault();
                 $('.tag-link').removeClass('active');
                 $(this).addClass('active');
@@ -167,7 +167,7 @@
                         .show();
                 }
             });
-        }
+        //}
 
         
 
@@ -187,7 +187,7 @@
                     }
                 });
                 $('.tags-cloud').append(html);
-                assignEvent();
+                //assignEvent();
             }
         });
     </script>
