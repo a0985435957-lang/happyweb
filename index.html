@@ -179,26 +179,19 @@
             method: 'GET',
             dataType: 'json',
             success: function(data) {
-
                 let html = '';
-
-                $.each(data, function(index, item) {
+                $.each(data, function(i, item) {
 
                     if (item.tag === '全部') {
                         html += '<a href="#" class="tag-link active">全部</a>';
                     } 
                     else {
-                        let countText = (item.count !== null) ? ' (' + item.count + ')' : '';
-                        html += '<a href="#" class="tag-link">' + item.tag + countText + '</a>';
+                        html += '<a href="#" class="tag-link">' + item.tag +'('+ item.count+ ')</a>';
                     }
-
                 });
-
                 $('.tags-cloud').append(html);
             }
         });
-
-
     </script>
 </body>
 </html>
