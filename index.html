@@ -142,13 +142,19 @@
             $('.tag-link').removeClass('active');
             $(this).addClass('active');
 
-            let tagText = $(this).text();
-            if (tagText === '全部') {
+            // 只取第一段（遇到空白切開）
+            let tagText = $(this).text().split(' ')[0];
+
+            // 若包含「全部」兩字 → 顯示全部文章
+            if (tagText.indexOf('全部') !== -1) {
                 $('.post-card').show();
-            } else {
+            }
+            else {
                 $('.post-card')
                     .hide()
                     .filter(function() {
+
+                        // 取得該文章所有標籤文字
                         var tags = $(this)
                             .find('.post-tags .tag')
                             .map(function() {
@@ -156,11 +162,17 @@
                             })
                             .get();
 
-                        return tags.includes(tagText);
+                        // 模糊比對：若 tagText 有包含任一 tag，就顯示
+                        for (let i = 0; i < tags.length; i++) {
+                            if (tagText.indexOf(tags[i]) !== -1)
+                                return true;
+                        }
+
                     })
                     .show();
             }
         });
+
 
 
     </script>
